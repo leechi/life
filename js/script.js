@@ -11,7 +11,6 @@ function loginHandler(event) {
     const username = loginInput.value;
     loginForm.classList.add(HIDDEN);
     localStorage.setItem(USERNAME, username);
-    logout.classList.remove(HIDDEN);
     paintGreeting(username)
 }
 
@@ -26,6 +25,7 @@ logout.addEventListener("click", logoutHandler);
 
 function paintGreeting(username) {
     greeting.classList.remove(HIDDEN);
+    logout.classList.remove(HIDDEN);
     greeting.innerText = `Hello ${username}`;
 }
 
