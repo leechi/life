@@ -4,22 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    
+    <title>Life</title>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                
-<p>column</p>
+            <div class="col-12">
+                    <div class="row">
+                        <div class="col-1">
+                            <button class="menu-bar">
+                             <i class="fa-solid fa-bars fa-2xl"></i>  
+                             <ul class="hidden">
+                                <li>
+                                    Ep
+                                </li>
+                                <li>
+                                    
+                                    Game
+                                    <ul>
+                                    <li>tetris</li>
+                                    </ul>
+                                   
+                                </li>
+                             </ul> 
+                            </button>
+                        </div>
+                        <div class="col-5">
+  <section class="greeting-box">
+                    <h1>Hello</h1>
+                    <form action="" class="login-form hidden" >
+                        <input type="text" placeholder="show your name">
+   </form>
+   <div class="login-form__greeting">
+   <h1 class="greeting hidden"></h1>
+   <button class="logout hidden"><i class="fa-solid fa-pen"></i></button>
+   </div>
+                </section>
+                <section class="time-box">
+                    <h1>Time</h1>
+                    <div class="time-box__box">
+                    <img src="" alt="">
+                    <div class="clock-time"></div>
+                    <span class="clock">00:00:00</span>
+                    </div>
+                </section>
+                <section class="diary-box">
+<h1>
+    diary
+</h1>
+<p class="diary-box__diary">
+    내가 감사하게 여기는 것</br>
+    1. </br>
+    2. </br>
+    3. </br>
+    오늘을 기분좋게 만드는 것
+    1. </br>
+    2. </br>
+    3. </br>
+</p>
+                </section>
+                 
+                </div>
+                <div class="col-5">
+                    <section class="todo-box">
+                        <h1>To-Do</h1>
+                        <form class="todo-box__box" action="">
+
+                        </form>
+                    </section>
+                    <section class="dday-box">
+                        <h1>D-DAY</h1>
+                        <div class="dday-box__box">
+
+                        </div>
+                    </section>
+                    <section class="quote-box">
+                        <h1>quote</h1>
+                        <div class="quote-box__box">
+                        <span ></span>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-1">
+                    <button class="dark-mode"><i class="fa-solid fa-sun fa-2xl"></i></button>
+                    <button class="dark-mode">
+                        <i class="fa-solid fa-moon fa-2xl"></i>
+                    </button>
+                </div>
             </div>
-            <div class="col-6">
-                <p>column</p>
+              
+
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/time.js"></script>
+    <script src="https://kit.fontawesome.com/15235ae2d2.js" crossorigin="anonymous"></script>
 </body>
 </html>

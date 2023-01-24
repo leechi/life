@@ -1,0 +1,32 @@
+.clock{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--sun-color);
+}
+
+
+.clock-time{
+    background-image: url(../img/clock.png);
+    background-size: cover;
+    width:120px;
+    height: 120px;
+}
+
+
+.time-box{
+    height: 173px;
+    width:var(--box-size_width);
+    margin:0 65px 13px 76px;
+}
+
+
+
+.time-box__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+      width:var(--box-size_width);
+     height: 147px;
+    border-radius: 10px;
+    background-color: var(--box-color);
+}

@@ -19,6 +19,7 @@ function logoutHandler() {
     logout.classList.add(HIDDEN);
     greeting.classList.add(HIDDEN);
     loginForm.classList.remove(HIDDEN);
+    loginForm.addEventListener("submit", loginHandler)
 }
 
 logout.addEventListener("click", logoutHandler);
@@ -26,7 +27,7 @@ logout.addEventListener("click", logoutHandler);
 function paintGreeting(username) {
     greeting.classList.remove(HIDDEN);
     logout.classList.remove(HIDDEN);
-    greeting.innerText = `Hello ${username}`;
+    greeting.innerText = `${username}`;
 }
 
 

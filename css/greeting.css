@@ -1,0 +1,44 @@
+.hidden{
+    display: none;
+
+}
+
+.login-form__greeting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    color:var(--sun-color)
+}
+
+.greeting-box{
+    width:var(--box-size_width);
+    height: 72px;
+    margin:50px 65px 13px 76px;
+}
+
+
+
+.login-form input{
+    border-bottom:blueviolet;
+    border:none;
+     width:var(--box-size_width);
+    height: 48px;
+
+    font-size: 25px;
+    border-bottom: 3px solid var(--sun-color);
+}
+
+.logout{
+    background-color:white;
+    border:none;
+
+}
+.greeting{
+    font-size: 30px;
+
+}
+.login-form input:focus{
+    outline:none;
+    border-bottom: 3px solid var(--sun-color);
+}
