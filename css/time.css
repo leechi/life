@@ -30,3 +30,85 @@
     border-radius: 10px;
     background-color: var(--box-color);
 }
+
+
+.div-analog{
+    width: 140px; 
+    height :140px; 
+    display:flex; 
+    justify-content: center;
+    align-items: center; 
+    background: url("../img/clock.png");
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: var(--space-xs);
+    margin-left: var(--space-xxs);
+    margin-bottom: var(--space-xxs);
+}
+
+.div-analog:before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: lightgray;
+    border-radius: 50%;
+    z-index : 10;
+}
+
+.div-analog .hour,
+.div-analog .min,
+.div-analog .sec{
+    position: absolute;
+}
+
+.div-analog .hour .hr{
+    width : 50px;
+    height : 60px;
+}
+
+.div-analog .min .mn{
+    width : 90px;
+    height : 90px;
+}
+
+.div-analog .sec .sc{
+    width : 90px;
+    height : 90px;
+}
+
+.hr, .mn, .sc{
+    display:flex; 
+    justify-content: center; 
+    border-radius: 50%;
+}
+
+.hr:before{
+    content: '';
+    position: absolute;
+    width:4px;
+    height:30px;    
+    background:var(--sun-color);
+    z-index : 10;
+    border-radius: 6px;
+}
+
+.mn:before{
+    content: '';
+    position: absolute;
+    width:3px;
+    height:45px;    
+    background: var(--sun2-color);
+    z-index : 10;
+    border-radius: 6px;
+}
+
+.sc:before{
+    content: '';
+    position: absolute;
+    width:2px;
+    height:60px;    
+    background: var(--sun-color);
+    z-index : 10;
+    border-radius: 6px;
+}

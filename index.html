@@ -16,12 +16,12 @@
         <div class="row">
             <div class="col-12">
                     <div class="row">
-                        <div class="col-1">
+                        <div class="col-1 menu">
                             <button class="menu-bar">
-                             <i class="fa-solid fa-bars fa-2xl"></i>  
-                             <ul class="hidden">
+                             <i class="menu-bar__icon fa-solid fa-bars fa-2xl"></i>  
+                             <ul class="menu-bar__list hidden">
                                 <li>
-                                    <a class="menu-bar__link" href="index.html">
+                                    <a class="menu-bar__link" href="#">
                                     Home
                                     </a>
                                 </li>
@@ -52,7 +52,17 @@
                 <section class="time-box">
                     <h1 class="title">Time</h1>
                     <div class="time-box__box">
-                    <div class="clock-time"></div>
+                    <div class="div-analog">
+                                    <div class="hour">
+                                        <div id="hr" class="hr"></div>
+                                    </div>
+                                    <div class="min">
+                                        <div id="mn" class="mn"></div>
+                                    </div>
+                                    <div class="sec">
+                                        <div id="sc" class="sc"></div>
+                                    </div>
+                                </div>
                     <span class="clock">00:00:00</span>
                     </div>
                 </section>
@@ -122,6 +132,7 @@
     <script src="js/todo.js"></script>
     <script src="js/dday.js"></script>
     <script src="js/dark.js"></script>
+    <script src="js/menu.js"></script>
     <script src="https://kit.fontawesome.com/15235ae2d2.js" crossorigin="anonymous"></script>
 </body>
 </html>

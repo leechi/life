@@ -25,7 +25,7 @@
 .todo-box__box__list{
   color: black;
   height: 230px;
-  overflow-x: scroll;
+  overflow: scroll;
 }
 .todo-box__box__list::-webkit-scrollbar{
   display: none;
