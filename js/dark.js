@@ -9,13 +9,26 @@ const menuText2 = document.querySelector(".menu-bar__link2");
 const editPen = document.querySelector(".fa-pen");
 
 
-if (moonmode.addEventListener("click", changeColorMoon)) {
+if (moonmode.addEventListener("click", changeColorMoon)) {    
+
     changeColorMoon()
+    
 } else if(
 sunmode.addEventListener("click", changeColorSun)) {
     changeColorSun()
 }
 
+function changebgSun() {
+    sunmode.classList.remove("hidden");
+    moonmode.classList.add("hidden");
+}
+function changebgMoon() {
+    sunmode.classList.add("hidden");
+    moonmode.classList.remove("hidden");
+}
+
+moonmode.addEventListener("click", changebgSun);
+sunmode.addEventListener("click", changebgMoon);
 
 function changeColorMoon(){
     body.style.backgroundColor = "#2B2B2B";
