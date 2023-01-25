@@ -1,10 +1,91 @@
-@import "greeting.css";
 @import "reset.css";
+@import "grid.min.css";
+@import "greeting.css";
+@import "time.css";
+@import "quote.css";
+@import "dday.css";
+@import "diary.css";
+@import "todo.css";
+@import "btn.css";
 
-* {
+*{
     box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 
-.hidden {
-    display: none;
+:root{
+    --box-size_width:320px ;
+   --sun-color : black ;
+   --moon-color : ;
+   --moon-bgColor:#2B2B2B ;
+   --box-color:#f2f2f2;
 }
+
+
+body{
+    height: 110vh;
+}
+
+
+
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.time-box__box, .diary-box__diary, .todo-box__box, .dday-box__box {
+    box-shadow: 1px 3px 20px #f2f2f2;
+}
+
+
+.title{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom:10px;
+}
+
+
+
+
+
+.col-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 1200px){
+    .container {
+        max-width: 960px !important;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .row {
+        width: 350px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .col-1{
+        display: none;
+    }
+    body{
+        
+    }
+    .todo-box{
+ width:var(--box-size_width);
+ height: 260px;
+ margin: 10px 0px 11px 0px;
+
+}
+
+}
+

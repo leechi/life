@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     
-    <title>Life</title>
+    <title>Life | Home</title>
 </head>
 <body>
     <div class="container">
@@ -21,78 +21,89 @@
                              <i class="fa-solid fa-bars fa-2xl"></i>  
                              <ul class="hidden">
                                 <li>
-                                    Ep
+                                    <a class="menu-bar__link" href="index.html">
+                                    Home
+                                    </a>
                                 </li>
                                 <li>
-                                    
+                                    <a class="menu-bar__link1" href="episode.html">
+                                    Episode
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a class="menu-bar__link2" href="game.html">
                                     Game
-                                    <ul>
-                                    <li>tetris</li>
-                                    </ul>
-                                   
+                                    </a>
                                 </li>
                              </ul> 
                             </button>
                         </div>
                         <div class="col-5">
   <section class="greeting-box">
-                    <h1>Hello</h1>
+                    <h1 class="greeting-box__title">Hello</h1>
                     <form action="" class="login-form hidden" >
                         <input type="text" placeholder="show your name">
    </form>
    <div class="login-form__greeting">
    <h1 class="greeting hidden"></h1>
-   <button class="logout hidden"><i class="fa-solid fa-pen"></i></button>
+   <button class="logout hidden"><i class="fa-solid fa-pen st"></i></button>
    </div>
                 </section>
                 <section class="time-box">
-                    <h1>Time</h1>
+                    <h1 class="title">Time</h1>
                     <div class="time-box__box">
-                    <img src="" alt="">
                     <div class="clock-time"></div>
                     <span class="clock">00:00:00</span>
                     </div>
                 </section>
                 <section class="diary-box">
-<h1>
-    diary
+<h1 class="title">
+    Journal
 </h1>
-<p class="diary-box__diary">
-    내가 감사하게 여기는 것</br>
-    1. </br>
-    2. </br>
-    3. </br>
-    오늘을 기분좋게 만드는 것
-    1. </br>
-    2. </br>
-    3. </br>
-</p>
+<div class="diary-box__diary">
+    <h2 class="question" style="color: black;">내가 감사하게 여기는 것</h1>
+    <textarea name="" id="" cols="7" rows="7">
+1.
+2.
+3.
+    </textarea>
+   <h2  class="question" style="color: black;"> 오늘을 기분좋게 만드는 것</h1>
+        <textarea name="" id="" cols="30" rows="10">
+1.
+2.
+3.
+    </textarea>
+</div>
                 </section>
                  
                 </div>
                 <div class="col-5">
                     <section class="todo-box">
-                        <h1>To-Do</h1>
-                        <form class="todo-box__box" action="">
-
-                        </form>
+                        <h1 class="title">To-Do</h1>
+                        <div class="todo-box__box" action="">
+                            <ul class="todo-box__box__list"></ul>
+                            <form class="todo-box__box__form" action="">
+                            <input type="text" placeholder="show your life!">
+                                </form>
+                        </div>
                     </section>
                     <section class="dday-box">
-                        <h1>D-DAY</h1>
+                        <h1 class="title">D-DAY</h1>
                         <div class="dday-box__box">
 
                         </div>
                     </section>
                     <section class="quote-box">
-                        <h1>quote</h1>
+                        <h1 class="title">Quote</h1>
                         <div class="quote-box__box">
-                        <span ></span>
+                            <span class="quote"></span>
+                        <span class="author"></span>
                         </div>
                     </section>
                 </div>
                 <div class="col-1">
-                    <button class="dark-mode"><i class="fa-solid fa-sun fa-2xl"></i></button>
-                    <button class="dark-mode">
+                    <button class="sun-mode"><i class="fa-solid fa-sun fa-2xl"></i></button>
+                    <button class="moon-mode">
                         <i class="fa-solid fa-moon fa-2xl"></i>
                     </button>
                 </div>
@@ -102,8 +113,15 @@
             </div>
         </div>
     </div>
+
+
+    </div>
     <script src="js/greeting.js"></script>
     <script src="js/time.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/dday.js"></script>
+    <script src="js/dark.js"></script>
     <script src="https://kit.fontawesome.com/15235ae2d2.js" crossorigin="anonymous"></script>
 </body>
 </html>

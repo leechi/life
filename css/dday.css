@@ -1,0 +1,13 @@
+
+.dday-box{
+    width:var(--box-size_width);
+ height: 230px;
+ margin: 0px 0px 6px 0px;
+}
+
+.dday-box__box{
+         width:var(--box-size_width);
+ height: 200px;
+ border-radius: 10px;
+background-color: var(--box-color);
+}
