@@ -1,11 +1,16 @@
 const dropdownMenu = document.querySelector(".dropdown-menu");
 const dropdownButton = document.querySelector(".dropdown-button");
 const ddayForm = document.querySelector(".dropdown-menu__form");
+
+
+
+
 const title = document.querySelector("#title");
-const start = document.querySelector("#start");
-const end = document.querySelector("#end")
+const sValue = document.querySelector("#start");
+const eVaule = document.querySelector("#end")
 const ddayTitle = document.querySelector(".dday-box__box-title");
 const ddayEnd = document.querySelector(".dday-box__box-number__date");
+const dday = document.querySelector(".dday-box__box-number__dday");
 
 dropdownButton.addEventListener("click", function(event) {
   if (this.active) {
@@ -20,9 +25,20 @@ dropdownButton.addEventListener("click", function(event) {
 dropdownButton.active = false;
 
 function handleDdaySubmit(event) {
+    let start = new Date();
+const end = new Date(eVaule.value);
 
+const timeDiff =  end.getTime() - start.getTime();
+const day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
+
+
+    event.preventDefault();
     ddayTitle.innerText = `${title.value}`;
-ddayEnd.innerText = `${end.value}`;
+    ddayEnd.innerText = `${eVaule.value}`;
+    dropdownMenu.classList.remove("active")
+    dday.innerText = `D-${day}`;
+    
+
 }
 
 
