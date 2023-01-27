@@ -71,13 +71,13 @@
     Journal
 </h1>
 <div class="diary-box__diary">
-    <h2 class="question" style="color: black;">내가 감사하게 여기는 것</h1>
+    <h2 class="question" style="color: black;">감사한 3가지</h1>
     <textarea name="" id="" cols="7" rows="7">
 1.
 2.
 3.
     </textarea>
-   <h2  class="question" style="color: black;"> 오늘을 기분좋게 만드는 것</h1>
+   <h2  class="question" style="color: black;">오늘의 다짐 3가지</h1>
         <textarea name="" id="" cols="30" rows="10">
 1.
 2.
@@ -98,9 +98,42 @@
                         </div>
                     </section>
                     <section class="dday-box">
+                    <div class="dday-box__top">
                         <h1 class="title">D-DAY</h1>
+                        <div class="dropdown">
+                        <button class="dropdown-button"><i class="fa-solid fa-square-plus"></i></button>
+                            <div class="dropdown-menu">
+                               <form class="dropdown-menu__form" action="">
+                                <div class="dropdown-menu__dday">
+                                <label  for="title">제목</label>
+                                <input type="text" id="title" placeholder="Write good title!">
+                                </div>
+                                <div class="dropdown-menu__dday"> 
+                                <label for="start">시작</label>
+                                <input type="text" id="start" placeholder="yyyy.mm.dd">
+                                </div>
+                                <div class="dropdown-menu__dday">
+                                <label for="end">종료</label>
+                                <input type="text" id="end" placeholder="yyyy.mm.dd">
+                                </div>
+                                <div class="big-boom">
+                                <input class="boom" type="submit" value="BOOM!">
+                                </div>
+                        </form>
+                            </div>
+                        </div>
+                        
+                    </div>
                         <div class="dday-box__box">
-
+                            <ul class="dday-box__box-line"></ul>
+                                <!-- <div class="dday-box__box-title">졸업작품</div>
+                                <div class="dday-minibox">
+                                <div class="dday-box__box-number">
+                                    <span class="dday-box__box-number__dday">D-3</span>
+                                    <span class="dday-box__box-number__date">2023.01.29</span>
+                                </div>
+                                <span class="dday-box__box-delete"><i class="fa-solid fa-square-minus"></i></span>
+                                </div> -->
                         </div>
                     </section>
                     <section class="quote-box">

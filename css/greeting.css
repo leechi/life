@@ -38,6 +38,10 @@
 
 }
 
+.logout:active{
+    transform: scale(1);
+}
+
 
 .greeting{
     font-size: 35px;
