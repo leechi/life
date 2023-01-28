@@ -32,17 +32,19 @@ function saveDdays() {
 
 function deleteDday(event) {
     const li = event.target.parentElement.parentNode.parentElement;
+    dDays = dDays.filter((dDay) => dDay.id !== parseInt(li.id));
     li.remove();
-    // dDays = dDays.filter(dDay => dDay.id !== parseInt(li.id));
-    // saveDdays();
-    console.log(event.target.parentElement.parentNode.parentElement)
+    saveDdays();
+   
 }
 
 
-function paintDday(day) {
+function paintDday(newDdayObj) {
 
 
     const ul = document.createElement("ul");
+    ul.id = newDdayObj.id;
+    
     ul.className = "dday-box__box-innerline";
     const liTitle = document.createElement("li");
     liTitle.className = "dday-box__box-title";
@@ -57,15 +59,16 @@ function paintDday(day) {
     const button = document.createElement("button");
     button.className = "dday-box__box-delete";
     ul.appendChild(liTitle);
-    liTitle.innerText = `${title.value}`;
+    liTitle.innerText = `${newDdayObj.title}`;
     ul.appendChild(miniBox);
     miniBox.appendChild(liNumber);
     liNumber.appendChild(spanDday);
     liNumber.appendChild(spanDate);
     miniBox.appendChild(button);
     button.innerHTML = `<i class="fa-solid fa-square-minus"></i>`;
-    spanDday.innerText = `D-${day}`;
-    spanDate.innerText = `${eVaule.value}`;
+    spanDday.innerText = `D-${newDdayObj.dday}`;
+    
+      spanDate.innerText = `${newDdayObj.date}`;
     button.addEventListener("click", deleteDday);
     ddatLine.appendChild(ul);
 
@@ -78,16 +81,15 @@ function handleDdaySubmit(event) {
     const end = new Date(eVaule.value);
     const result =  end.getTime() - start.getTime();
     const day = Math.floor(result / (1000 * 60 * 60 * 24) + 1);
-//    const dayObj = {
-//        title: title.value,
-//        day : parseInt(JSON.stringify(day)),
-//        end : eVaule.value,
-//        id: Date.now(),
-//     };
-    
+    const newDdayObj = {
+        title: title.value,
+        date: eVaule.value,
+        dday : day ,
+        id : Date.now(),
+    }
     dropdownMenu.classList.remove("active") 
-  
-    paintDday(day);
+    dDays.push(newDdayObj)
+    paintDday(newDdayObj);
    
     saveDdays();
 
@@ -97,9 +99,10 @@ function handleDdaySubmit(event) {
 ddayForm.addEventListener("submit", handleDdaySubmit)
 
 
+const savedDdays = localStorage.getItem(DDAY);
 
-// if (savedDdays !== null) {
-//     const parsedDays = JSON.parse(savedDdays);
-//     dDays = parsedDays;
-//     parsedDays.forEach(paintDday);
-// }
+if (savedDdays !== null) {
+    const parsedDdays = JSON.parse(savedDdays);
+    dDays = parsedDdays;
+    parsedDdays.forEach(paintDday);
+}

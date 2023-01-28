@@ -104,7 +104,7 @@
                                <form class="dropdown-menu__form" action="">
                                 <div class="dropdown-menu__dday">
                                 <label style="color: black;" for="title">제목</label>
-                                <input type="text" id="title" placeholder="Write good title!">
+                                <input required type="text" id="title" placeholder="Write good title!">
                                 </div>
                                 <!-- <div class="dropdown-menu__dday"> 
                                 <label for="start">시작</label>
@@ -112,7 +112,7 @@
                                 </div> -->
                                 <div class="dropdown-menu__dday">
                                 <label style="color: black;" for="end">종료</label>
-                                <input type="date" id="end" placeholder="YYYY-MM-DD">
+                                <input required type="date" id="end" placeholder="YYYY-MM-DD">
                                 </div>
                                 <div class="big-boom">
                                     <span class="precaution""><i class="fa-solid fa-exclamation" style="color: red;"></i> Just do it</span>
@@ -140,9 +140,15 @@
                     <button class="moon-mode">
                         <i class="fa-solid fa-moon fa-2xl"></i>
                     </button>
+                    <div class="weather-top">
+                        <i class="fa-solid fa-face-smile-beam"></i>
+        <i class="fa-solid fa-face-laugh-squint"></i>
+                     <i class="fa-solid fa-face-smile-wink"></i>
+                    </div>
                         <div id="weather">
-                            <span>W</span>
-                            <span>W</span>
+                            
+                            <span></span>
+                            <span class="weather-city"></span>
                         </div>
                 </div>
             </div>
