@@ -45,15 +45,10 @@ body{
 }
 
 
-.weather-city{
-margin-top: 5px;
-font-size: 12px;
-text-align: center;
-font-weight: 400;
-}
+
 
 .weather-top{
-    margin-top:50px;
+    margin-top:222px;
     font-size: 22px;
     display: flex;
     align-items: center;
