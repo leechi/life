@@ -2,6 +2,7 @@ const toDoForm = document.querySelector(".todo-box__box__form");
 const toDoInput = document.querySelector(".todo-box__box__form input")
 const toDoList = document.querySelector(".todo-box__box__list");
 
+
 const TODOS = "todos"
 let toDos = [];
 
@@ -25,16 +26,24 @@ function paintToDo(newTodo) {
     const li = document.createElement("li");
     li.id = newTodo.id;
     const span = document.createElement("span");
+    span.className = "todo-list"
     const button = document.createElement("button");
-    
-   ul.appendChild(li);
-    li.appendChild(span);
+    const check = document.createElement("input");
+    check.setAttribute("type", "checkbox");
+    check.className = "check-box";
+    const box = document.createElement("div");
+    box.className = "todominibox";
+    ul.appendChild(li);
+    li.appendChild(box);
+    box.appendChild(check);
+    box.appendChild(span);
     li.appendChild(button);
+    
     span.innerText = newTodo.text;
     button.innerHTML = `<i class="fa-solid fa-square-minus"></i>`
     button.addEventListener("click", deleteToDo)
     toDoList.appendChild(ul);
-     
+    
 }
 
 

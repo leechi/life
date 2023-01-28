@@ -12,9 +12,7 @@ const ddatLine = document.querySelector(".dday-box__box-line");
 
 const DDAY = "dday";
 let dDays = [];
-function saveToDos() {
-    localStorage.setItem(DDAY, JSON.stringify(dDays));
-}
+
 
 function handleDropdown() {
     if (this.active) {
@@ -26,19 +24,17 @@ function handleDropdown() {
   this.active = !this.active
 }
 
-
 dropdownButton.addEventListener("click", handleDropdown)
 
-// dropdownButton.active = false;
-
-function saveToDos() {
-    localStorage.setItem(TODOS, JSON.stringify(toDos));
+function saveDdays() {
+    localStorage.setItem(DDAY, JSON.stringify(dDays));
 }
-
 
 function deleteDday(event) {
     const li = event.target.parentElement.parentNode.parentElement;
     li.remove();
+    // dDays = dDays.filter(dDay => dDay.id !== parseInt(li.id));
+    // saveDdays();
     console.log(event.target.parentElement.parentNode.parentElement)
 }
 
@@ -82,18 +78,28 @@ function handleDdaySubmit(event) {
     const end = new Date(eVaule.value);
     const result =  end.getTime() - start.getTime();
     const day = Math.floor(result / (1000 * 60 * 60 * 24) + 1);
+//    const dayObj = {
+//        title: title.value,
+//        day : parseInt(JSON.stringify(day)),
+//        end : eVaule.value,
+//        id: Date.now(),
+//     };
+    
     dropdownMenu.classList.remove("active") 
+  
     paintDday(day);
+   
+    saveDdays();
 
 }
 
 
 ddayForm.addEventListener("submit", handleDdaySubmit)
 
-const savedDdays = localStorage.getItem(DDAY);
 
-if (savedDdays !== null) {
-    const parsedDays = JSON.parse(savedToDos);
-    dDays = parsedDays;
-    parsedDays.forEach(paintDday);
-}
+
+// if (savedDdays !== null) {
+//     const parsedDays = JSON.parse(savedDdays);
+//     dDays = parsedDays;
+//     parsedDays.forEach(paintDday);
+// }

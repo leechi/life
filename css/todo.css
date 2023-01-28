@@ -79,3 +79,19 @@
   font-size: 17px;
 }
 
+.todominibox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-box[type=checkbox]{
+  border:none;
+  accent-color: green;
+  margin-right: 10px;
+  outline: 0;
+}
+.check-box:checked {
+  background-color: #f2f2f2;
+
+}
