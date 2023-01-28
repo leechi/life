@@ -5,6 +5,7 @@
  margin: 0px 0px 6px 0px;
  display: flex;
  flex-direction: column;
+
 }
 
 .dday-box__top{
@@ -24,17 +25,29 @@ color: #f2f2f2;
 }
 .dday-box__box{
          width:var(--box-size_width);
- height: 200px;
  border-radius: 10px;
 background-color: var(--box-color);
 }
 
 .dday-box__box-line{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    height: 42px;
+    height: 200px;
     padding: 5px 17px;
+     overflow: scroll;
+}
+
+.dday-box__box-line::-webkit-scrollbar{
+  display: none;
+}
+
+.dday-box__box-innerline{
+    display: flex;
+     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 42px;
 }
 
 .dday-box__box-title{
@@ -63,8 +76,16 @@ color: lightgray;
 
 .dday-box__box-delete{
     color: #f2f2f2;
-    margin-left: 5px;
+    margin-left: 12px;
+    width: 15px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
 }
+
+
 
 .dday-box__box-delete:hover{
     color:black;
@@ -176,9 +197,11 @@ color: lightgray;
 
 .boom{
     border:none;
-    color: inherit;
+    color: black;
     border-radius: 10px;
     margin-right: 3px;
+    font-weight: 700;
+    
 }
 
 .boom:hover{

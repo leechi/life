@@ -4,9 +4,9 @@ const body = document.querySelector("body");
 const greetingColor = document.querySelector(".login-form__greeting");
 const btn = document.querySelector(".menu-bar");
 const menuText = document.querySelector(".menu-bar__link");
-const menuText1 = document.querySelector(".menu-bar__link1");
 const menuText2 = document.querySelector(".menu-bar__link2");
 const editPen = document.querySelector(".fa-pen");
+const dropdownBtn = document.querySelector(".btn");
 
 
 if (moonmode.addEventListener("click", changeColorMoon)) {    
@@ -39,8 +39,9 @@ function changeColorMoon(){
     sunmode.style.color = "lightgray";
     editPen.style.color = "lightgray";
     menuText.style.color = "lightgray";
-    menuText1.style.color = "lightgray";
     menuText2.style.color = "lightgray";
+    dropdownBtn.style.color = "lightgray";
+
 }
 
 function changeColorSun(){
@@ -52,8 +53,9 @@ function changeColorSun(){
     sunmode.style.color = "black";
     editPen.style.color = "black";
     menuText.style.color = "black";
-     menuText1.style.color = "black";
+
     menuText2.style.color = "black";
+    dropdownBtn.style.color = "black";
 }
 
 

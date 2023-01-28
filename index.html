@@ -25,11 +25,7 @@
                                     Home
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="menu-bar__link1" href="episode.html">
-                                    Episode
-                                    </a>
-                                </li>
+                           
                                 <li> 
                                     <a class="menu-bar__link2" href="game.html">
                                     Game
@@ -101,11 +97,11 @@
                     <div class="dday-box__top">
                         <h1 class="title">D-DAY</h1>
                         <div class="dropdown">
-                        <button class="dropdown-button"><i class="fa-solid fa-square-plus"></i></button>
+                        <button class="dropdown-button"><i class="btn fa-solid fa-square-plus"></i></button>
                             <div class="dropdown-menu">
                                <form class="dropdown-menu__form" action="">
                                 <div class="dropdown-menu__dday">
-                                <label  for="title">제목</label>
+                                <label style="color: black;" for="title">제목</label>
                                 <input type="text" id="title" placeholder="Write good title!">
                                 </div>
                                 <!-- <div class="dropdown-menu__dday"> 
@@ -113,12 +109,12 @@
                                 <input type="date" id="start" value="">
                                 </div> -->
                                 <div class="dropdown-menu__dday">
-                                <label for="end">종료</label>
+                                <label style="color: black;" for="end">종료</label>
                                 <input type="date" id="end" placeholder="YYYY-MM-DD">
                                 </div>
                                 <div class="big-boom">
-                                    <span class="precaution""><i class="fa-solid fa-exclamation" style="color: red;"></i>  시작일 포함</span>
-                                <input class="boom" type="submit" value="BOOM!">
+                                    <span class="precaution""><i class="fa-solid fa-exclamation" style="color: red;"></i> Just do it</span>
+                                <input   class="boom" type="submit" value="BOOM!">
                                 </div>
                                 </form>
                             </div>
@@ -126,16 +122,7 @@
                         
                     </div>
                         <div class="dday-box__box">
-                            <ul class="dday-box__box-line">
-                                <div class="dday-box__box-title"></div>
-                                <div class="dday-minibox">
-                                <div class="dday-box__box-number">
-                                    <span class="dday-box__box-number__dday"></span>
-                                    <span class="dday-box__box-number__date"></span>
-                                </div>
-                                <span class="dday-box__box-delete"><i class="fa-solid fa-square-minus"></i></span>
-                                </div>
-                                </ul>
+                            <ul class="dday-box__box-line"></ul>
                         </div>
                     </section>
                     <section class="quote-box">
@@ -151,6 +138,10 @@
                     <button class="moon-mode">
                         <i class="fa-solid fa-moon fa-2xl"></i>
                     </button>
+                        <div id="weather">
+                            <span>W</span>
+                            <span>W</span>
+                        </div>
                 </div>
             </div>
               
@@ -167,6 +158,7 @@
     <script src="js/todo.js"></script>
     <script src="js/dday.js"></script>
     <script src="js/dark.js"></script>
+    <script src="js/weather.js"></script>
     <script src="js/menu.js"></script>
     <script src="https://kit.fontawesome.com/15235ae2d2.js" crossorigin="anonymous"></script>
 </body>

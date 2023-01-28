@@ -25,9 +25,10 @@
 			box-sizing: border-box;
 			border: solid 3px #b2b2b2;
 			border-radius: 5px;
-			font-size: 13px;
+			font-size: 17px;
             overflow:hidden;
   resize: none;
+  padding-left: 7px;
 		}
 
         .question{
