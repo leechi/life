@@ -2,9 +2,6 @@ const dropdownMenu = document.querySelector(".dropdown-menu");
 const dropdownButton = document.querySelector(".dropdown-button");
 const ddayForm = document.querySelector(".dropdown-menu__form");
 
-
-
-
 const title = document.querySelector("#title");
 const sValue = document.querySelector("#start");
 const eVaule = document.querySelector("#end");
@@ -68,7 +65,7 @@ function paintDday(newDdayObj) {
     button.innerHTML = `<i class="fa-solid fa-square-minus"></i>`;
     spanDday.innerText = `D-${newDdayObj.dday}`;
     
-      spanDate.innerText = `${newDdayObj.date}`;
+    spanDate.innerText = `${newDdayObj.date}`;
     button.addEventListener("click", deleteDday);
     ddatLine.appendChild(ul);
 

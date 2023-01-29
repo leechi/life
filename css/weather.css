@@ -1,0 +1,22 @@
+#weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:5px;
+    font-size:15px;
+    font-weight: 700;
+}
+
+.weather-top{
+    margin-top:222px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.fa-face-laugh-squint{
+    margin:0 2px;
+}

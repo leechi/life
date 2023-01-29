@@ -3,18 +3,11 @@
     font-weight: 700;
     color: var(--sun-color);
 }
-
-
-
-
 .time-box{
     height: 173px;
     width:var(--box-size_width);
     margin:0 65px 13px 76px;
 }
-
-
-
 .time-box__box{
     display: flex;
     align-items: center;
@@ -24,8 +17,6 @@
     border-radius: 10px;
     background-color: var(--box-color);
 }
-
-
 .div-analog{
     width: 120px; 
     height :120px; 
@@ -35,11 +26,8 @@
     background: url("../img/clock.png");
     background-size: cover;
     border-radius: 50%;
-    margin-top: var(--space-xs);
-    margin-left: var(--space-xxs);
-    margin-bottom: var(--space-xxs);
-}
 
+}
 .div-analog:before {
     content: '';
     position: absolute;
@@ -49,34 +37,28 @@
     border-radius: 50%;
     z-index : 10;
 }
-
 .div-analog .hour,
 .div-analog .min,
 .div-analog .sec{
     position: absolute;
 }
-
 .div-analog .hour .hr{
     width : 50px;
     height : 60px;
 }
-
 .div-analog .min .mn{
     width : 90px;
     height : 90px;
 }
-
 .div-analog .sec .sc{
     width : 90px;
     height : 90px;
 }
-
 .hr, .mn, .sc{
     display:flex; 
     justify-content: center; 
     border-radius: 50%;
 }
-
 .hr:before{
     content: '';
     position: absolute;
@@ -86,7 +68,6 @@
     z-index : 10;
     border-radius: 6px;
 }
-
 .mn:before{
     content: '';
     position: absolute;
@@ -96,7 +77,6 @@
     z-index : 10;
     border-radius: 6px;
 }
-
 .sc:before{
     content: '';
     position: absolute;

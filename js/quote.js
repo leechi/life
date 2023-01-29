@@ -24,8 +24,6 @@ const quotes = [
     author: "하버트 개서"
   },
   
-  
-  
 ]
 
 const quoteBox =document.querySelector(".quote-box__box")

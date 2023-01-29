@@ -1,11 +1,9 @@
-
 .moon-mode,.sun-mode{
     border-radius: 50%;
     border:none;
     background-color: inherit;
     margin: 30px 10px 0px 0px;
 }
-
 
 .menu{
     display: flex;
@@ -17,9 +15,7 @@
 .menu-bar{
     border:none;
     background-color: inherit;
-
 }
-
 
 .fa-bars:hover{
     color:#f2f2f2;
@@ -30,24 +26,20 @@
     color:black;
     transition: 0.7;
 }
+
 .fa-moon:hover{
     color:#f2f2f2;
     transition: 0.7;
 }
-
-
 
 .st:active{
     color:lightgray;
     scale: 0.7;
 }
 
-
-
 .menu-bar ul > li > a{
     color:black;
 }
-
 
 .menu-bar ul{
     margin-top:30px;
@@ -60,5 +52,4 @@
     font-weight: 700;
     width:70px;
     height: 50px;
-
 }

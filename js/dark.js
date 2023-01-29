@@ -10,11 +10,8 @@ const dropdownBtn = document.querySelector(".btn");
 
 
 if (moonmode.addEventListener("click", changeColorMoon)) {    
-
-    changeColorMoon()
-    
-} else if(
-sunmode.addEventListener("click", changeColorSun)) {
+    changeColorMoon()    
+} else if(sunmode.addEventListener("click", changeColorSun)) {
     changeColorSun()
 }
 
@@ -53,7 +50,6 @@ function changeColorSun(){
     sunmode.style.color = "black";
     editPen.style.color = "black";
     menuText.style.color = "black";
-
     menuText2.style.color = "black";
     dropdownBtn.style.color = "black";
 }

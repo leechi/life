@@ -7,6 +7,8 @@
 @import "diary.css";
 @import "todo.css";
 @import "btn.css";
+@import "weather.css";
+@import "mobile.css";
 
 *{
     box-sizing: border-box;
@@ -19,13 +21,8 @@ font-family: 'Poppins', sans-serif;
    --sun-color : black ;
    --sun2-color : #2b2b2b;
    --sun3-color : #f2f2f2;
-   --moon-color : ;
    --moon-bgColor:#2B2B2B ;
-   --box-color:#f2f2f2;
-
-    
-
-   
+   --box-color:#f2f2f2;   
 }
 
 
@@ -34,31 +31,6 @@ body{
 }
 
 
-#weather{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top:5px;
-    font-size:15px;
-    font-weight: 700;
-}
-
-
-
-
-.weather-top{
-    margin-top:222px;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-}
-
-.fa-face-laugh-squint{
-    margin: 0 2px;
-}
 
 .container{
   display: flex;
@@ -80,8 +52,6 @@ body{
 }
 
 
-
-
 .col-5{
     display: flex;
     flex-direction: column;
@@ -89,53 +59,4 @@ body{
 }
 
 
-@media screen and (min-width: 1200px){
-    .container {
-        max-width: 960px !important;
-    }
-}
 
-@media screen and (max-width:990px) {
-    .container{
-        height: 1450px;
-    }
-    .row {
-        width: 350px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-    }
-    .col-1:first-child{
-        display: none;
-    }
-    .col-1:last-child{
- 
-        margin: 30px;
-        width:300px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        
-    }
-    .weather-top{
-        margin-top:22px;
-    }
-
-    body{
-        height: 100vh;
-    }
-    .todo-box{
- width:var(--box-size_width);
- height: 260px;
- margin: 10px 0px 11px 0px;
-
-}
-
-}
-
-
-.big-box{
-    width: 100%;
-}

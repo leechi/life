@@ -1,5 +1,3 @@
-
-
 .todo-box{
  width:var(--box-size_width);
  height: 260px;
@@ -8,9 +6,9 @@
 }
 
 .todo-box__box{
-     width:var(--box-size_width);
- height: 230px;
- border-radius: 10px;
+   width:var(--box-size_width);
+   height: 230px;
+   border-radius: 10px;
    background-color: var(--box-color);
    position: relative;
 }

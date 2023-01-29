@@ -1,13 +1,10 @@
-
 .dday-box{
     width:var(--box-size_width);
  height: 230px;
  margin: 0px 0px 6px 0px;
  display: flex;
  flex-direction: column;
-
 }
-
 .dday-box__top{
     display: flex;
     justify-content: space-between;
@@ -18,8 +15,6 @@
     margin-bottom:10px;
  font-size: 20px;
 }
-
-
 .fa-square-plus:hover{
 color: #f2f2f2;
 }
@@ -28,7 +23,6 @@ color: #f2f2f2;
  border-radius: 10px;
 background-color: var(--box-color);
 }
-
 .dday-box__box-line{
     display: flex;
     flex-direction: column;
@@ -37,11 +31,9 @@ background-color: var(--box-color);
     padding: 5px 17px;
      overflow: scroll;
 }
-
 .dday-box__box-line::-webkit-scrollbar{
   display: none;
 }
-
 .dday-box__box-innerline{
     display: flex;
      justify-content: space-between;
@@ -49,13 +41,11 @@ background-color: var(--box-color);
     width: 100%;
     height: 42px;
 }
-
 .dday-box__box-title{
     font-size: 20px;
     color: black;
     font-weight: 700;
 }
-
 .dday-box__box-number{
     display: flex;
     flex-direction: column;
@@ -63,17 +53,14 @@ background-color: var(--box-color);
     justify-content: space-around;
     height: 42px;
 }
-
 .dday-box__box-number__dday{
     font-weight: 600;
     color: black;
 }
-
 .dday-box__box-number__date{
 font-size: 12px;
 color: lightgray;
 }
-
 .dday-box__box-delete{
     color: #f2f2f2;
     margin-left: 12px;
@@ -84,13 +71,9 @@ color: lightgray;
     justify-content: center;
     border: none;
 }
-
-
-
 .dday-box__box-delete:hover{
     color:black;
 }
-
 .dday-box__box-delete:active{
     transform: scale(0.7);
 }
@@ -99,15 +82,11 @@ color: lightgray;
     display: flex;
     align-items: center;
 }
-
-
 /* dropdown */
 .dropdown {
   position: relative;
 }
-
 .dropdown-button {
-    
   width: 20px;
   height: 20px;
   border: none;
@@ -117,22 +96,18 @@ color: lightgray;
   background-color: transparent;
   cursor: pointer;
 }
-
 .dropdown-button:hover {
   opacity: 0.75;
 }
-
 .dropdown-button:focus,
 .dropdown-button:active {
   box-shadow: none;
   outline: none;
 }
-
 .dropdown-button img {
   width: 100%;
   height: auto;
 }
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -145,15 +120,12 @@ color: lightgray;
   box-shadow: 0 1px 15px rgba(27, 31, 35, 0.15);
   transition: transform 200ms ease-in;
 }
-
 .dropdown-menu.active {
   display: block;
 }
-
 .dropdown-menu:hover {
   transform: translateY(2px);
 }
-
 .dropdown-menu::before {
   content: "";
   position: absolute;
@@ -166,7 +138,6 @@ color: lightgray;
   border-bottom: 9px solid #fff;
   border-right: 8px solid transparent;
 }
-
 .dropdown-menu__dday{
     display: flex;
     align-items: center;
@@ -174,7 +145,6 @@ color: lightgray;
 }
 .dropdown-menu__dday label{
     font-weight: 700;
-
 }
 .dropdown-menu__dday input{
     border:none;
@@ -194,29 +164,23 @@ color: lightgray;
     justify-content: space-between;
     padding: 5px 2px;
 }
-
 .boom{
     border:none;
     color: black;
     border-radius: 10px;
     margin-right: 3px;
     font-weight: 700;
-    
 }
-
 .boom:hover{
     cursor: pointer;
     color:white;
 }
-
 #title{
     width:112px
 }
-
 .precaution{
     color: black;
     font-size: 12px;
     font-weight: 700;
     padding-left: 10px;
-  
 }
