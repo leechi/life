@@ -17,6 +17,12 @@
     font-weight: 700;
 }
 
+.weather-city{
+    font-weight: 400;
+    font-size: 12px;
+    margin-top:5px;
+}
+
 .fa-face-laugh-squint{
     margin:0 2px;
 }
