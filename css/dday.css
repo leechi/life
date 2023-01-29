@@ -104,14 +104,11 @@ color: lightgray;
   box-shadow: none;
   outline: none;
 }
-.dropdown-button img {
-  width: 100%;
-  height: auto;
-}
+
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 140%;
+  top: 30px;
   right: -7px;
   width: 170px;
   padding: 8px 0;
@@ -129,7 +126,7 @@ color: lightgray;
 .dropdown-menu::before {
   content: "";
   position: absolute;
-  top: -18px;
+  top: -15px;
   right: 12px;
   width: 0;
   height: 0;
