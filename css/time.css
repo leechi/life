@@ -17,7 +17,7 @@
     border-radius: 10px;
     background-color: var(--box-color);
 }
-.div-analog{
+.analog{
     width: 120px; 
     height :120px; 
     display:flex; 
@@ -27,7 +27,7 @@
     background-size: cover;
     border-radius: 50%;
 }
-.div-analog:before {
+.analog:before {
     content: '';
     position: absolute;
     width: 7px;
@@ -36,20 +36,20 @@
     border-radius: 50%;
     z-index : 10;
 }
-.div-analog .hour,
-.div-analog .min,
-.div-analog .sec{
+.analog .hour,
+.analog .min,
+.analog .sec{
     position: absolute;
 }
-.div-analog .hour .hr{
+.analog .hour .hr{
     width : 50px;
     height : 60px;
 }
-.div-analog .min .mn{
+.analog .min .mn{
     width : 90px;
     height : 90px;
 }
-.div-analog .sec .sc{
+.analog .sec .sc{
     width : 90px;
     height : 90px;
 }
